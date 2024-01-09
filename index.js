@@ -8,13 +8,12 @@ const PORT = process.env.PORT || 4000;
 
 app.use(
   cors({
-    origin: "*",
+    origin: "https://employee-registration.vercel.app/",
   })
 );
 
 // Middleware
 app.use(express.json());
-
 app.use("/api/v1", userRoutes);
 
 // CORS Configuration
