@@ -14,7 +14,8 @@ app.use(
 
 // Middleware
 app.use(express.json());
-app.use("/api/v1", userRoutes);
+// app.use("/api/v1", userRoutes);
+app.use(userRoutes);
 
 // CORS Configuration
 app.listen(PORT, () => {
