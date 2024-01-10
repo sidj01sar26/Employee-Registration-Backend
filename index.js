@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 4000;
 
 app.use(
   cors({
-    origin: "https://employee-registration.vercel.app/",
+    origin: "https://employee-registration.vercel.app",
   })
 );
 
